@@ -1,0 +1,18 @@
+﻿@using MvcSample.Web.Models
+@model ChristmasCount
+@{
+    Layout = "/Views/Shared/_Layout.cshtml";
+    ViewBag.Title = "Home Page";
+    string helloClass = null;
+}
+
+<div class="jumbotron">
+    <h1>2014 Geek Christmas Countdown</h1>
+    <p class="lead">ASP.NET is a free web framework for building great Web sites and Web applications using HTML, CSS and JavaScript.</p>
+    <p><a href="http://asp.net" class="btn btn-primary btn-large">Learn more &raquo;</a></p>
+</div>
+<div class="row">
+    <h3 class="@helloClass">Christmas in @Model.TimeTilChristmas!</h3>
+     <h3 class="@helloClass">Build in @Model.TimeTilBuild!</h3>
+     <h3 class="@helloClass">Star Wars Episode 7 in @Model.TimeTilSW7!</h3>
+</div>
