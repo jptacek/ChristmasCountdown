@@ -1,4 +1,4 @@
-﻿using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations;
 using System;
 
 namespace MvcSample.Web.Models
@@ -14,7 +14,7 @@ namespace MvcSample.Web.Models
         public string TimeTilChristmas { 
         	get 
         	{
-        		DateTime eventDate = new DateTime(2014, 12, 15, 5, 00, 0);
+        		DateTime eventDate = new DateTime(2014, 12, 25, 5, 00, 0);
         		return CalcuateDisplayString(eventDate);
         	} 
         }
@@ -39,7 +39,7 @@ namespace MvcSample.Web.Models
         	int days = _startTime.Day - eventTime.Day;
         	
         	string timeDiff = String.Format("{0:%d} day(s) {0:%h} hour(s) {0:%m} minutes(s)", dateDifference);
-
+            
         	return timeDiff ;
         }
     }
